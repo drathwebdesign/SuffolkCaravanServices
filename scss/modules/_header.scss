@@ -1,0 +1,86 @@
+// Header
+
+.header-top {
+    height: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    @include mq (large){
+        justify-content: center;
+    }
+    img {
+        height: 100px;
+        width: 180px;
+        transition: opacity 0.3s ease;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+    .main-nav {
+        @media (max-width: 990px) {
+            display: none;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: transparent;
+    
+        li {
+            flex: 1;
+            text-align: center;
+            border-radius: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        li.nav-text{
+            font-family: 'Permanent Marker','Lato', sans-serif;
+            transition: box-shadow 0.3s ease, color 0.3s ease;
+            &:hover {
+                box-shadow: 0 0 10px rgba(249, 26, 1, 0.7);
+                color: rgba(249, 26, 1, 0.7);
+            }
+            a {
+                display:block;
+                padding: 20px;
+            }
+        }
+    }
+}
+
+.header-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    p {
+        font-size: 0.6rem;
+        letter-spacing: .2px;     
+    }
+    a {
+        font-size: 0.9rem;
+        letter-spacing: .2px;
+    }
+}
+
+
+
+.slide-down {
+    animation: slideDown 1.2s forwards;
+    //background-color: rgba(0, 0, 0, 0.5);
+    background-color: $light-bg;
+}
+
+@keyframes slideDown {
+    from {
+        top: -120px; /* Start position above the viewport */
+    }
+    to {
+        top: 0; /* Final position at the top of the viewport */
+    }
+}

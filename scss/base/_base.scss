@@ -1,0 +1,83 @@
+//generic
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    @include mq(small){
+        width: 460px;
+    }
+    @include mq(medium){
+        width: 768px;
+    }
+    @include mq(large){
+        width: 748px; 
+    }
+    @include mq(xlarge){
+        width: 1000px;
+    }
+    @include mq(xxlarge){
+        width: 1250px;
+    }
+}
+
+.pad20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.pad10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: $light-bg;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-weight: $font-weight--light;
+    font-size: 1.2rem;
+    letter-spacing: .4px;
+    position: relative; /* Add this for positioning the pseudo-element */
+    
+    a:hover{
+        cursor: pointer;
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha channel for the darkness level */
+    display: none;
+    z-index: 4;
+}
+
+.wrapper {
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+.mobile-nav.active {
+    transform: translateX(0);
+}
+
+.overlay.active {
+    display: block;
+    cursor: pointer;
+}
+
+.wrapper.active {
+    transform: translateX(-12rem);
+}
