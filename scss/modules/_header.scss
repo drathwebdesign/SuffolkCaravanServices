@@ -52,6 +52,9 @@ header {
                 border-radius: 10px;
                 margin-left: 5px;
                 margin-right: 5px;
+                @include mq (xlarge){
+                    font-size: 1.25rem;
+                }
             }
             li.nav-text{
                 transition: box-shadow 0.3s ease, color 0.3s ease;
@@ -68,15 +71,55 @@ header {
     }
 }
 
+.header-hidden {
+    display: flex; /* Or any other display property initially */
+    flex-direction: column;
+
+    i {
+        font-size: 1.1rem;
+        color: $logo-text-color;
+    }
+
+    a {
+        padding: 5px;
+        font-size: 1.25rem;
+        letter-spacing: .2px;
+        transition: opacity 0.3s ease;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    @media (max-width: 767px) {
+        display: none;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        display: flex;
+    }
+
+    @media (min-width: 992px) {
+        display: none;
+    }
+}
+
+
+
+
+
 .header-bottom {
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     p {
         font-size: 0.6rem;
-        letter-spacing: .2px;     
+        letter-spacing: .2px;
+        @include mq (sphone){
+            font-size: 0.8rem;
+        }    
     }
     i {
         font-size: 1.1rem;
@@ -87,8 +130,14 @@ header {
         font-size: 0.9rem;
         letter-spacing: .2px;
         transition: opacity 0.3s ease;
+        @include mq (sphone){
+            font-size: 1.2rem;
+        } 
         &:hover {
             opacity: 0.7;
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            display: none;
         }
     }
 }

@@ -48,6 +48,10 @@
                 <li class="nav-text"><a href="about.php">About</a></li>
             </ul>
         </nav>
+        <div class="header-hidden">
+            <a href="mailto:simon@suffolkcaravanservices.uk" class="email-info"><i class="fa-solid fa-envelope"></i> simon@suffolkcaravanservices.uk</a>
+            <a href="tel:07733057266" class="#"><i class="fa-solid fa-phone"></i> 07733057266</a>
+        </div>
         <div class="hamburger-menu">
             <div class="ham-bar bar-top"></div>
             <div class="ham-bar bar-mid"></div>
@@ -96,4 +100,5 @@
 
 <script src="javascript/hamburger.js"></script>
 <script src="javascript/sticky-header.js"></script>
+<!-- <script src="javascript/hamburger+sticky.js"></script> -->
 </body>

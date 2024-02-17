@@ -8,6 +8,11 @@
             @content;
     }
 }
+@else if $break == "sphone" {
+    @media (min-width: $break-sphone) {
+            @content;
+    }
+} 
 @else if $break == "small" {
     @media (min-width: $break-small) {
             @content;
