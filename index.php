@@ -58,16 +58,32 @@
 
     <div class="header-bottom">
       <p>Hours of Business: Monday - Friday 8:00am to 5:00pm</p>
-      <a href="mailto:simon@suffolkcaravanservices.uk" class="email-info"><i class="fa-solid fa-envelope"></i>simon@suffolkcaravanservices.uk</a>
-      <a href="tel:07733057266" class="#"><i class="fa-solid fa-phone"></i>07733057266</a>
+      <a href="mailto:simon@suffolkcaravanservices.uk" class="email-info"><i class="fa-solid fa-envelope"></i> simon@suffolkcaravanservices.uk</a>
+      <a href="tel:07733057266" class="#"><i class="fa-solid fa-phone"></i> 07733057266</a>
     </div>
 </div>
 
 </header>
 
-<div class="container">
+<section class="home-info">
+    <div class="container pad20">
+        <h1>Based in Ipswich, Suffolk, I offer mobile servicing and repairs to caravans and motorhomes in East Suffolk and North Essex.</h1>
+        <p>There is no need for you to hitch up your caravan or drive your motorhome to a service centre, I come to you; Your caravan or motorhome can be serviced at home, on a seasonal pitch or when in storage.</p>
+        <ul>
+            <li>Suffolk Caravan Services offer:</li>
+            <li><a href="#">Full Single and Twin Axle Caravan Services</a></li>
+            <li><a href="#">Habitation Check on Caravan, Motorhome or Campervan</a></li>
+            <li><a href="#">Chassis Service only for your Caravan</a></li>
+            <li><a href="#">Repairs on your appliances</a></li>
+            <li><a href="#">Alde Fluid Changes</a></li>
+        </ul>
+    </div>
+    <div class="container pad20">
+        <img src=images/SCS-van-side.jpg alt="Suffolk caravan services van side">
+        <img src=images/SCS-van-back.jpg alt="Suffolk caravan services van back">
+    </div>
 
-</div>
+</section>
 
 
 
