@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suffolk Caravan Services</title>
+    <title>Suffolk Caravan Services Pricing</title>
     <link rel="stylesheet" href="css/application.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,25 +22,24 @@ if (file_exists($filename)) {
     echo "Error: '$filename' could not be found please hang tight site may be undergoing maintenance";
 }
 ?>
-
-<section class="home-info">
+<section class="pricing-info">
     <div class="container pad20">
-        <h1>Based in Ipswich, Suffolk, I offer mobile servicing and repairs to caravans and motorhomes in East Suffolk and North Essex.</h1>
-        <p>There is no need for you to hitch up your caravan or drive your motorhome to a service centre, I come to you; Your caravan or motorhome can be serviced at home, on a seasonal pitch or when in storage.</p>
-        <ul>
-            <li>Suffolk Caravan Services offer:</li>
-            <li><a href="fullservice.php">Full Single and Twin Axle Caravan Services</a></li>
-            <li><a href="habitation.php">Habitation Check on Caravan, Motorhome or Campervan</a></li>
-            <li><a href="chassis.php">Chassis Service only for your Caravan</a></li>
-            <li><a href="repairs.php">Repairs on your appliances</a></li>
-            <li><a href="alde-fluid.php">Alde Fluid Changes</a></li>
-        </ul>
+        <h1>Service and Labour/Call out rates</h1>
+        <p>Single Axle Service £215 + Hub Nuts</p>
+        <p>Twin Axle Service £245 + Hub Nuts</p>
+        <p>Habitation Service £175</p>
+        <p>Chassis Service Single Axle £120 + Hub Nuts</p>
+        <p>Chassis Service Twin Axle £145 + Hub Nuts</p>
+        <br>
+        <p>Damp Test £60</p>
+        <p>Gas Test £60</p>
+        <p>Alde Fluid Change £200</p>
+        <br>
+        <h2>Repairs</h2>
+        <p>Initial Call Out Including 1st Hour £55</p>
+        <p>Hourly Rate £50</p>
+        <br>
     </div>
-    <div class="container pad20 images-container">
-        <img src=images/SCS-van-side.jpg alt="Suffolk caravan services van side">
-        <img src=images/SCS-van-back.jpg alt="Suffolk caravan services van back">
-    </div>
-
 </section>
 
 <?php
