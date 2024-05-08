@@ -82,7 +82,7 @@
             <li><a href="#">Alde Fluid Changes</a></li>
         </ul>
     </div>
-    <div class="container pad20">
+    <div class="container pad20 images-container">
         <img src=images/SCS-van-side.jpg alt="Suffolk caravan services van side">
         <img src=images/SCS-van-back.jpg alt="Suffolk caravan services van back">
     </div>
